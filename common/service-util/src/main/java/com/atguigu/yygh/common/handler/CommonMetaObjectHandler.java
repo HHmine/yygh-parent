@@ -16,6 +16,8 @@ public class CommonMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         this.setFieldValByName("createTime", new Date(), metaObject);
         this.setFieldValByName("updateTime", new Date(), metaObject);
+//        this.setFieldValByName("is_deleted",0,metaObject);
+
     }
     @Override
     public void updateFill(MetaObject metaObject) {
